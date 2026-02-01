@@ -160,8 +160,8 @@
 
 ### Bug Fixes
 
-* add missing batch options `catppuccin_pane{,_active}_border_style` ([3ffbc37](https://github.com/catppuccin/tmux/commit/3ffbc3700b4c1c3e2c4d015c5a51ccef555dabaf))
-* add missing batch options catppuccin_pane{,_active}_border_style ([3ffbc37](https://github.com/catppuccin/tmux/commit/3ffbc3700b4c1c3e2c4d015c5a51ccef555dabaf))
+* add missing batch options `ayu_pane{,_active}_border_style` ([3ffbc37](https://github.com/catppuccin/tmux/commit/3ffbc3700b4c1c3e2c4d015c5a51ccef555dabaf))
+* add missing batch options ayu_pane{,_active}_border_style ([3ffbc37](https://github.com/catppuccin/tmux/commit/3ffbc3700b4c1c3e2c4d015c5a51ccef555dabaf))
 * escaping in options ([#298](https://github.com/catppuccin/tmux/issues/298)) ([9b57c20](https://github.com/catppuccin/tmux/commit/9b57c2002081fff8af16b878f1369d46788c0409))
 * **pomodoro_plus:** option names ([#273](https://github.com/catppuccin/tmux/issues/273)) ([51dde6e](https://github.com/catppuccin/tmux/commit/51dde6e8d4d3d8da97d915b01594a08aa4ac0cca))
 * warning `[@catppuccin](https://github.com/catppuccin)_flavour` ([#296](https://github.com/catppuccin/tmux/issues/296)) ([a71f3c0](https://github.com/catppuccin/tmux/commit/a71f3c039bed8a7c49fc390a50befec5db2c4af9))

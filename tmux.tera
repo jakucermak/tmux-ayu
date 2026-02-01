@@ -3,7 +3,7 @@ whiskers:
   version: "^2.5.1"
   matrix:
     - flavor
-  filename: "themes/catppuccin_{{flavor.identifier}}_tmux.conf"
+  filename: "themes/ayu_{{flavor.identifier}}_tmux.conf"
   hex_format: "#{{r}}{{g}}{{b}}{{z}}"
 ---
 # vim:set ft=tmux:
@@ -39,4 +39,3 @@ set -ogq @thm_surface_1 "{{ surface1.hex }}"
 set -ogq @thm_surface_0 "{{ surface0.hex }}"
 set -ogq @thm_mantle "{{ mantle.hex }}"
 set -ogq @thm_crust "{{ crust.hex }}"
-

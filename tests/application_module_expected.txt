@@ -1,1 +1,1 @@
-@catppuccin_status_application #[fg=#eba0ac]#[fg=#11111b,bg=#eba0ac] #[fg=#cdd6f4,bg=#313244]#{E:@catppuccin_application_text}#[fg=#313244]
+@ayu_status_application #[fg=#eba0ac]#[fg=#11111b,bg=#eba0ac] #[fg=#cdd6f4,bg=#313244]#{E:@ayu_application_text}#[fg=#313244]

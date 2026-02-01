@@ -89,7 +89,7 @@ Check out what to do next in the "[Getting Started Guide](./docs/tutorials/01-ge
 1.  (Optional) Set your preferred flavor, it defaults to `"mocha"`:
 
     ```bash
-    set -g @catppuccin_flavor 'mocha' # latte, frappe, macchiato or mocha
+    set -g @ayu_flavor 'mocha' # latte, frappe, macchiato or mocha
     ```
 
     <!-- x-release-please-end -->
@@ -146,8 +146,8 @@ set -g mouse on
 set -g default-terminal "tmux-256color"
 
 # Configure the catppuccin plugin
-set -g @catppuccin_flavor "mocha"
-set -g @catppuccin_window_status_style "rounded"
+set -g @ayu_flavor "mocha"
+set -g @ayu_window_status_style "rounded"
 
 # Load catppuccin
 run ~/.config/tmux/plugins/catppuccin/tmux/catppuccin.tmux
@@ -157,11 +157,11 @@ run ~/.config/tmux/plugins/catppuccin/tmux/catppuccin.tmux
 set -g status-right-length 100
 set -g status-left-length 100
 set -g status-left ""
-set -g status-right "#{E:@catppuccin_status_application}"
-set -agF status-right "#{E:@catppuccin_status_cpu}"
-set -ag status-right "#{E:@catppuccin_status_session}"
-set -ag status-right "#{E:@catppuccin_status_uptime}"
-set -agF status-right "#{E:@catppuccin_status_battery}"
+set -g status-right "#{E:@ayu_status_application}"
+set -agF status-right "#{E:@ayu_status_cpu}"
+set -ag status-right "#{E:@ayu_status_session}"
+set -ag status-right "#{E:@ayu_status_uptime}"
+set -agF status-right "#{E:@ayu_status_battery}"
 
 run ~/.config/tmux/plugins/tmux-plugins/tmux-cpu/cpu.tmux
 run ~/.config/tmux/plugins/tmux-plugins/tmux-battery/battery.tmux

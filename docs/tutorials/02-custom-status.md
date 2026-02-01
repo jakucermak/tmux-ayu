@@ -31,11 +31,11 @@ To use the status module formatting that catppuccin uses, do the following:
 
 %hidden MODULE_NAME="my_custom_module"
 
-set -g "@catppuccin_${MODULE_NAME}_icon" " "
-set -gF "@catppuccin_${MODULE_NAME}_color" "#{E:@thm_pink}"
-set -g "@catppuccin_${MODULE_NAME}_text" "#{pane_current_command}"
+set -g "@ayu_${MODULE_NAME}_icon" " "
+set -gF "@ayu_${MODULE_NAME}_color" "#{E:@thm_pink}"
+set -g "@ayu_${MODULE_NAME}_text" "#{pane_current_command}"
 
 source "<path to catppuccin plugin>/utils/status_module.conf"
 
-set -g status-right "#{E:@catppuccin_status_application}#{E:@catppuccin_status_my_custom_module}"
+set -g status-right "#{E:@ayu_status_application}#{E:@ayu_status_my_custom_module}"
 ```
