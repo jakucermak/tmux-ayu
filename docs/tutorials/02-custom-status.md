@@ -32,7 +32,7 @@ To use the status module formatting that catppuccin uses, do the following:
 %hidden MODULE_NAME="my_custom_module"
 
 set -g "@ayu_${MODULE_NAME}_icon" " "
-set -gF "@ayu_${MODULE_NAME}_color" "#{E:@thm_pink}"
+set -gF "@ayu_${MODULE_NAME}_color" "#{E:@thm_violet}"
 set -g "@ayu_${MODULE_NAME}_text" "#{pane_current_command}"
 
 source "<path to catppuccin plugin>/utils/status_module.conf"
