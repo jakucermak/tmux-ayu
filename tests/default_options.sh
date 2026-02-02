@@ -8,6 +8,6 @@ source "${script_dir}/helpers.sh"
 tmux source "${script_dir}/../ayu_options_tmux.conf"
 tmux source "${script_dir}/../ayu_tmux.conf"
 
-print_option @ayu_flavor
+print_option @ayu_appearance
 print_option @ayu_menu_selected_style
 print_option @ayu_pane_active_border_style

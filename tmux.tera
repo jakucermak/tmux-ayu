@@ -2,13 +2,13 @@
 whiskers:
   version: "^2.5.1"
   matrix:
-    - flavor
-  filename: "themes/ayu_{{flavor.identifier}}_tmux.conf"
+    - appearance
+  filename: "themes/ayu_{{appearance.identifier}}_tmux.conf"
   hex_format: "#{{r}}{{g}}{{b}}{{z}}"
 ---
 # vim:set ft=tmux:
 
-# --> Catppuccin ({{ flavor.identifier | capitalize }})
+# --> Catppuccin ({{ appearance.identifier | capitalize }})
 set -ogq @thm_bg "{{ base.hex }}"
 set -ogq @thm_fg "{{ text.hex }}"
 

@@ -1,46 +1,10 @@
-<!-- markdownlint-disable -->
-<h3 align="center">
- <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png" width="100" alt="Logo"/><br/>
- <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
- Catppuccin for <a href="https://github.com/tmux/tmux">Tmux</a>
- <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
-</h3>
-
-<p align="center">
-    <a href="https://github.com/catppuccin/tmux/stargazers"><img src="https://img.shields.io/github/stars/catppuccin/tmux?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
-    <a href="https://github.com/catppuccin/tmux/issues"><img src="https://img.shields.io/github/issues/catppuccin/tmux?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
-    <a href="https://github.com/catppuccin/tmux/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/tmux?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
-</p>
-
-<p align="center">
-  <img src="./assets/preview.webp"/>
-</p>
-<!-- markdownlint-enable -->
 
 ## Themes
 
 <details>
-<summary>🌻 Latte</summary>
+<summary>Dark</summary>
 
-![Latte Flavor Preview](./assets/latte.webp)
-
-</details>
-<details>
-<summary>🪴 Frappé</summary>
-
-![Frappe Flavor Preview](./assets/frappe.webp)
-
-</details>
-<details>
-<summary>🌺 Macchiato</summary>
-
-![Macchiato Flavor Preview](./assets/macchiato.webp)
-
-</details>
-<details>
-<summary>🌿 Mocha</summary>
-
-![Mocha Flavor Preview](./assets/mocha.webp)
+![Dark](./assets/dark.webp)
 
 </details>
 
@@ -59,15 +23,15 @@ This method is recommended as TPM has some issues with name conflicts.
 <!-- x-release-please-start-version -->
 
 1. Clone this repository to your desired location (e.g.
-   `~/.config/tmux/plugins/catppuccin`).
+   `~/.config/tmux/plugins/ayu`).
 
    ```bash
-   mkdir -p ~/.config/tmux/plugins/catppuccin
-   git clone -b v2.1.3 https://github.com/catppuccin/tmux.git ~/.config/tmux/plugins/catppuccin/tmux
+   mkdir -p ~/.config/tmux/plugins/ayu
+   git clone -b v0.1.0 https://github.com/jakucermak/tmux-ayu ~/.config/tmux/plugins/ayu/tmux
    ```
 
 1. Add the following line to your `tmux.conf` file:
-   `run ~/.config/tmux/plugins/catppuccin/tmux/catppuccin.tmux`.
+   `run ~/.config/tmux/plugins/ayu/tmux/ayu.tmux`.
 1. Reload Tmux by either restarting or reloading with `tmux source ~/.tmux.conf`.
 <!-- x-release-please-end -->
 
@@ -78,18 +42,18 @@ Check out what to do next in the "[Getting Started Guide](./docs/tutorials/01-ge
 <!-- x-release-please-start-version -->
 
 1.  Install [TPM](https://github.com/tmux-plugins/tpm)
-1.  Add the Catppuccin plugin:
+1.  Add the ayu plugin:
 
     ```bash
-    set -g @plugin 'catppuccin/tmux#v2.1.3' # See https://github.com/catppuccin/tmux/tags for additional tags
-    # ...alongside
+    set -g @plugin 'jakucermak/tmux-ayu#v0.1.0' 
+    
     set -g @plugin 'tmux-plugins/tpm'
     ```
 
-1.  (Optional) Set your preferred flavor, it defaults to `"mocha"`:
+1.  (Optional) Set your preferred appearance, it defaults to `"dark"`:
 
     ```bash
-    set -g @ayu_flavor 'mocha' # latte, frappe, macchiato or mocha
+    set -g @ayu_appearance 'dark' # dark, (light, mirage) come soon 
     ```
 
     <!-- x-release-please-end -->
@@ -103,7 +67,7 @@ Check out what to do next in the "[Getting Started Guide](./docs/tutorials/01-ge
 
 This plugin uses features that were only introduced into tmux in version 3.2.
 If you are using a version earlier than this, you can still have lovely
-catppuccin colors, the installation method just looks a little different.
+ayu colors, the installation method just looks a little different.
 
 ```sh
 # In your ~/.tmux.conf
@@ -128,7 +92,7 @@ set -gF window-status-current-format "#[bg=#{@ctp_accent_on},fg=#{@ctp_crust}] #
 ### Upgrading from v0.3
 
 Breaking changes have been introduced since 0.3, to understand how to migrate
-your configuration, see pinned issue [#487](https://github.com/catppuccin/tmux/issues/487).
+your configuration, see pinned issue [#487](https://github.com/ayu/tmux/issues/487).
 
 ## Recommended Default Configuration
 
@@ -145,13 +109,13 @@ This is what is used for the previews above.
 set -g mouse on
 set -g default-terminal "tmux-256color"
 
-# Configure the catppuccin plugin
-set -g @ayu_flavor "mocha"
+# Configure the ayu plugin
+set -g @ayu_appearance "mocha"
 set -g @ayu_window_status_style "rounded"
 
-# Load catppuccin
-run ~/.config/tmux/plugins/catppuccin/tmux/catppuccin.tmux
-# For TPM, instead use `run ~/.tmux/plugins/tmux/catppuccin.tmux`
+# Load ayu
+run ~/.config/tmux/plugins/ayu/tmux/ayu.tmux
+# For TPM, instead use `run ~/.tmux/plugins/tmux/ayu.tmux`
 
 # Make the status line pretty and add some modules
 set -g status-right-length 100
@@ -180,20 +144,4 @@ run ~/.config/tmux/plugins/tmux-plugins/tmux-battery/battery.tmux
 
 - [Status Line](./docs/reference/status-line.md)
 - [Configuration Options Reference](./docs/reference/configuration.md)
-- [Tmux Configuration Showcase](https://github.com/catppuccin/tmux/discussions/317)
-
-## 💝 Thanks to
-
-- [Pocco81](https://github.com/Pocco81)
-- [vinnyA3](https://github.com/vinnyA3)
-- [rogeruiz](https://github.com/rogeruiz)
-- [kales](https://github.com/kjnsn)
-
-&nbsp;
-
-<!-- markdownlint-disable -->
-<p align="center">
-<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/footers/gray0_ctp_on_line.svg?sanitize=true" /></p>
-<p align="center">Copyright &copy; 2021-present <a href="https://github.com/catppuccin" target="_blank">Catppuccin Org</a>
-<p align="center"><a href="https://github.com/catppuccin/catppuccin/blob/main/LICENSE"><img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=License&message=MIT&logoColor=d9e0ee&colorA=363a4f&colorB=b7bdf8"/></a></p>
-<!-- markdownlint-enable -->
+- [Tmux Configuration Showcase](https://github.com/ayu/tmux/discussions/317)

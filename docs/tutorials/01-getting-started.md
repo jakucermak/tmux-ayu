@@ -16,7 +16,7 @@ Using your favourite editor, edit the file `~/.tmux.conf`.
 It should look like this:
 
 ```bash
-set -g @ayu_flavor 'mocha'
+set -g @ayu_appearance 'mocha'
 
 run ~/.config/tmux/plugins/catppuccin/tmux/catppuccin.tmux
 ```
@@ -33,7 +33,7 @@ be a bit more colorful. Edit your tmux config again so it looks like this.
 
 ```bash
 # Pick a softer palette.
-set -g @ayu_flavor 'frappe'
+set -g @ayu_appearance 'frappe'
 
 run ~/.config/tmux/plugins/catppuccin/tmux/catppuccin.tmux
 

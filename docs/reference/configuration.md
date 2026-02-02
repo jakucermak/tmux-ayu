@@ -8,7 +8,7 @@ This is a diagram of how the theme is split between its components.
 
 | Option               | Effect                                                                         |
 | -------------------- | ------------------------------------------------------------------------------ |
-| `@ayu_flavor` | Sets the catppuccin flavor, one of "latte", "frappe", "macchiato", or "mocha". |
+| `@ayu_appearance` | Sets the catppuccin appearance, one of "latte", "frappe", "macchiato", or "mocha". |
 
 ### Status Line
 
