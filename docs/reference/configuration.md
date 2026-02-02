@@ -33,11 +33,11 @@ setting the `@ayu_window_status_style` option. The default is `basic`.
 | `custom`  | Custom separators are used. This is required to override the separators! |                                                        |
 | `none`    | Styling of the window status is completely disabled.                     | ![window no styling](../../assets/window-none.webp)       |
 
-If you want to change the active color to something else (the default is mauve),
-use the following. For example to use lavender:
+If you want to change the active color to something else (the default is accent_on),
+use the following. For example to use accent_tint:
 
 ```bash
-set -g @ayu_window_current_number_color "#{@thm_lavender}"
+set -g @ayu_window_current_number_color "#{@thm_accent_tint}"
 ```
 
 <details>
@@ -75,7 +75,7 @@ set -g @ayu_menu_selected_style "fg=#{@thm_fg},bold,bg=#{@thm_overlay_0}"
 set -g @ayu_pane_status_enabled "no" # set to "yes" to enable
 set -g @ayu_pane_border_status "off" # set to "yes" to enable
 set -g @ayu_pane_border_style "fg=#{@thm_overlay_0}"
-set -g @ayu_pane_active_border_style "##{?pane_in_mode,fg=#{@thm_lavender},##{?pane_synchronized,fg=#{@thm_mauve},fg=#{@thm_lavender}}}"
+set -g @ayu_pane_active_border_style "##{?pane_in_mode,fg=#{@thm_accent_tint},##{?pane_synchronized,fg=#{@thm_accent_on},fg=#{@thm_accent_tint}}}"
 set -g @ayu_pane_left_separator "█"
 set -g @ayu_pane_middle_separator "█"
 set -g @ayu_pane_right_separator "█"
@@ -91,7 +91,7 @@ set -g @ayu_window_number_color "#{@thm_overlay_2}"
 set -g @ayu_window_text " #T"
 set -g @ayu_window_number "#I"
 set -g @ayu_window_current_text_color "#{@thm_surface_1}"
-set -g @ayu_window_current_number_color "#{@thm_mauve}"
+set -g @ayu_window_current_number_color "#{@thm_accent_on}"
 set -g @ayu_window_current_text " #T"
 set -g @ayu_window_current_number "#I"
 set -g @ayu_window_number_position "left"

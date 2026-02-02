@@ -194,7 +194,7 @@ tmux:
     staged: "#[fg=#{@thm_green},bold]"
     conflict: "#[fg=#{@thm_red},bold]"
     modified: "#[fg=#{@thm_yellow},bold]"
-    untracked: "#[fg=#{@thm_mauve},bold]"
+    untracked: "#[fg=#{@thm_accent_on},bold]"
     stashed: "#[fg=#{@thm_blue},bold]"
     clean: "#[fg=#{@thm_rosewater},bold]"
     insertions: "#[fg=#{@thm_green}]"

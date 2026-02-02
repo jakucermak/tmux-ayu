@@ -114,7 +114,7 @@ catppuccin colors, the installation method just looks a little different.
 set -g @ctp_bg "#24273a"
 set -g @ctp_surface_1 "#494d64"
 set -g @ctp_fg "#cad3f5"
-set -g @ctp_mauve "#c6a0f6"
+set -g @ctp_accent_on "#c6a0f6"
 set -g @ctp_crust "#181926"
 
 # status line
@@ -122,7 +122,7 @@ set -gF status-style "bg=#{@ctp_bg},fg=#{@ctp_fg}"
 
 # windows
 set -gF window-status-format "#[bg=#{@ctp_surface_1},fg=#{@ctp_fg}] ##I ##T "
-set -gF window-status-current-format "#[bg=#{@ctp_mauve},fg=#{@ctp_crust}] ##I ##T "
+set -gF window-status-current-format "#[bg=#{@ctp_accent_on},fg=#{@ctp_crust}] ##I ##T "
 ```
 
 ### Upgrading from v0.3
