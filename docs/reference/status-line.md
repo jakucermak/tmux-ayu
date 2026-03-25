@@ -40,7 +40,7 @@ set -g @ayu_[module_name]_text "text"
 ### Override the specific module's background color
 
 ```sh
-set -g @ayu_status_[module_name]_bg_color "#{@thm_surface_0}"
+set -g @ayu_status_[module_name]_bg_color "#{@thm_ui_panel}"
 ```
 
 ### Removing a specific module option
@@ -196,7 +196,7 @@ tmux:
     modified: "#[fg=#{@thm_yellow},bold]"
     untracked: "#[fg=#{@thm_accent_on},bold]"
     stashed: "#[fg=#{@thm_blue},bold]"
-    clean: "#[fg=#{@thm_rosewater},bold]"
+    clean: "#[fg=#{@thm_peach},bold]"
     insertions: "#[fg=#{@thm_green}]"
     deletions: "#[fg=#{@thm_red}]"
 ```
@@ -228,7 +228,7 @@ run '~/.tmux/plugins/tpm/tpm'
 
 ```sh
 set -g @ayu_kube_context_color "#{@thm_red}"
-set -g @ayu_kube_namespace_color "#{@thm_sky}"
+set -g @ayu_kube_namespace_color "#{@thm_indigo}"
 
 run ~/.config/tmux/plugins/catppuccin/tmux/catppuccin.tmux
 

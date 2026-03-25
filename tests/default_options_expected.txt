@@ -1,3 +1,3 @@
 @ayu_appearance mocha
-@ayu_menu_selected_style fg=#{@thm_fg},bold,bg=#{@thm_overlay_0}
+@ayu_menu_selected_style fg=#{@thm_fg},bold,bg=#{@thm_ui_line}
 @ayu_pane_active_border_style ##{?pane_in_mode,fg=#{@thm_accent_tint},##{?pane_synchronized,fg=#{@thm_accent_on},fg=#{@thm_accent_tint}}}
